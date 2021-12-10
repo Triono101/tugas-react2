@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Monoton&family=Rubik:wght@500&family=Unna:ital,wght@0,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@900&display=swap");
+
+* {
+    margin: 0px;
+    font-family: "Rubik", sans-serif;
+  }
+
+.container-fluid p {
+font-style: italic;
+color: black;
+text-shadow: 0px 1.3px 1px dodgerblue;
+font-family: 'Merriweather', serif;
+}
+
+div h1 {
+color: black;
+text-shadow: 0px 1.3px 2px dodgerblue;
+font-family: 'Merriweather', serif;
+}
+
+.satu {
+text-align: left;
+}
+
+.dua {
+text-align: left;
+}
+
+.jumbotron {
+background-image: url("./Component/Bootsrap/data.png");
+background-size: cover;
+height: 500px;
+background-position: 0 -217px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+#btn {
+    border-radius: 8px;
+    box-shadow: 0px 1.5px 1px white !important;
+}
+
+.data {
+    width: 700px;
+}
+
+#submit {
+    color: white;
+}
+
+#submit:hover {
+    color: white;
+    box-shadow: 0px 1.5px 1px greenyellow !important;
+}
+
+#Input1::placeholder {
+    font-family: 'PT Serif', serif;
+}
+
+.container-fluid .footer {
+    position: relative;
+    margin-bottom: 0;
+    line-height: 50px;
+    text-shadow: none;
+    font-size: 13px;
+}
