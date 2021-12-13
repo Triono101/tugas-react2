@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/* Button pertama */
+
+#btn {
+    font-family: 'Yeseva One';
+    border-radius: 4px;
+    background-color: dodgerblue;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 1px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+    box-shadow: 0 10px 20px -8px black;
+}
+  
+#btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: -1px;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#btn:hover{
+    padding-right: 50px;
+    padding-left: 0px;
+}
+  
+#btn:hover:after {
+    opacity: 1;
+    right: 25px;
+}
+
+/* Bagian navbar */
+
+.navbar {
+    font-size: 20px;
+    padding: 20px;
+    background-color: dodgerblue;
+}
+
+.font {
+    margin-left: 235px;
+    color: white;
+    font-family: 'Playball';
+    font-size: 25px;
+}
+
+.font:hover {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.penutup {
+    width: 250px;
+    color: white;
+    font-family: 'Yeseva One';
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: 0 10px 20px -8px black;
+}
+
+.penutup:hover {
+    color: white;
+}
+
+.container-fluid .footer {
+    position: relative;
+    margin-bottom: 0;
+    line-height: 50px;
+    text-shadow: none;
+    font-size: 23px;
+    font-family: 'Playball', cursive;
+}
+
+#btn1 {
+    font-family: 'Yeseva One';
+    border-radius: 4px;
+    background-color: dodgerblue;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 1px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+    box-shadow: 0 10px 20px -8px black;
+}
+
+#btn1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#btn1:after {
+    content: '«';
+    position: absolute;
+    opacity: 0;  
+    top: -1px;
+    left: -20px;
+    transition: 0.5s;
+}
+  
+#btn1:hover{
+    padding-right: 0px;
+    padding-left: 60px;
+}
+  
+#btn1:hover:after {
+    opacity: 1;
+    left: 30px;
+}
+
+/* Form */
+
+.btn2 {
+    cursor: pointer;
+    border: none;
+    padding: 7px 26px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    background: dodgerblue;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px -8px black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+Input {
+    border-radius: 15px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid rgb(148, 146, 146);
+}
+
+Input:focus {
+	outline: none;
+  	border: 2px solid skyblue;
+}
