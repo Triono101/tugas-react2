@@ -1,11 +1,9 @@
-import Page from './News Api';
-import Footer from './News Api/NewsElement/footer';
+import Component from "./Component";
 
 function App() {
   return (
     <div className="App">
-      <Page />
-      <Footer />
+      <Component />
     </div>
   );
 }
