@@ -1,9 +1,11 @@
-import Registrasi from './Form';
+import Page from './News Api';
+import Footer from './News Api/NewsElement/footer';
 
 function App() {
   return (
     <div className="App">
-      <Registrasi />
+      <Page />
+      <Footer />
     </div>
   );
 }
