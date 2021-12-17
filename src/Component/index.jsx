@@ -11,11 +11,11 @@ export default class Component extends React.Component {
     render() {
         return(
             <div>
-                <Boostrap />
-                <Jumbotron />
-                <Content />
-                <FormEmail />
-                <Footer />
+                <Boostrap/>
+                <Jumbotron/>
+                <Content/>
+                <FormEmail/>
+                <Footer/>
             </div>
         )
     }
