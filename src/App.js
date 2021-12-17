@@ -1,9 +1,9 @@
-import Registrasi from "./Form";
+import Page from "./News Api";
 
 function App() {
   return (
     <div className="App">
-      <Registrasi />
+      <Page />
     </div>
   );
 }
