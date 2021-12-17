@@ -6,7 +6,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 export default class NewsApi extends React.Component {
   state = {
     articles: [],
-    isLoading: true,
+    isLoading: true, 
     errors: null
   };
 

@@ -3,6 +3,7 @@ import '../AddNews.css'
 import News from "./NewsElement/indexNews";
 import NewsApi from "./NewsElement/body";
 import Input from "./NewsElement/inputSearch";
+import Footer from "./NewsElement/footer";
 
 export default class Page extends React.Component {
 
@@ -12,6 +13,7 @@ export default class Page extends React.Component {
                 <News />
                 <Input />
                 <NewsApi />
+                <Footer />
             </div>
         )
     }

@@ -9,6 +9,5 @@ const Footer = () =>
                     </p>
                 </footer>
             </div>
-                   
 
 export default Footer;

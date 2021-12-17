@@ -16,7 +16,7 @@ export default class News extends React.Component {
                         <Nav className="me-auto">
                         </Nav>
                         <Nav>
-                        <Dropdown>
+                        <Dropdown> 
                             <Dropdown.Toggle className="penutup" id="dropdown-basic" variant="outline-info">
                             Contact Us {'  '}
                             </Dropdown.Toggle>
