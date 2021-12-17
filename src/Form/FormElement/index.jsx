@@ -11,7 +11,7 @@ export default class FormElement extends React.Component {
                 <Container fluid>
                     <   Button id="btn" href="https://eduwork.id/student/74/class/curriculum"
                             target="blank">Validation</Button>
-                    <h2 className="font">Tugas Form Registrasi - Eduwork</h2>
+                    <h2 className="font">Tugas Form Registrasi - Eduwork</h2> 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

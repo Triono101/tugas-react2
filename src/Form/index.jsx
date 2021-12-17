@@ -8,8 +8,8 @@ export default class Registrasi extends React.Component {
     render() {
         return(
             <div>
-                <FormElement />
-                <Validation />
+                <FormElement /> 
+                <Validation /> 
             </div>
         )
     }
