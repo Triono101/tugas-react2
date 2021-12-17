@@ -17,8 +17,8 @@ export default class Boostrap extends React.Component {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#bio">Biography</Nav.Link>
-                        <NavDropdown title="Contact" id="navbarScrollingDropdown">
+                        <Nav.Link href="#bio" active>Biography</Nav.Link>
+                        <NavDropdown title="Contact" id="navbarScrollingDropdown" active>
                         <NavDropdown.Item href="https://tri.co.id/" target="blank">Phone</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="https://web.telegram.org/z/" target="blank">Telegram</NavDropdown.Item>

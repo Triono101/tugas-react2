@@ -7,31 +7,31 @@
   }
 
 .container-fluid p {
-font-style: italic;
-color: black;
-text-shadow: 0px 1.3px 1px dodgerblue;
-font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: black;
+    text-shadow: 0px 1.3px 1px dodgerblue;
+    font-family: 'Merriweather', serif;
 }
 
 div h1 {
-color: black;
-text-shadow: 0px 1.3px 2px dodgerblue;
-font-family: 'Merriweather', serif;
+    color: black;
+    text-shadow: 0px 1.3px 2px dodgerblue;
+    font-family: 'Merriweather', serif;
 }
 
 .satu {
-text-align: left;
+    text-align: left;
 }
 
 .dua {
-text-align: left;
+    text-align: left;
 }
 
 .jumbotron {
-background-image: url("./Component/Bootsrap/data.png");
-background-size: cover;
-height: 500px;
-background-position: 0 -217px;
+    background-image: url("./Component/Bootsrap/data.png");
+    background-size: cover;
+    height: 500px;
+    background-position: 0 -217px;
 }
 
 .btn a {

@@ -4,7 +4,7 @@ import { Button, Container, Form } from "react-bootstrap";
 const FormEmail = () => {
         return(
             <Container fluid id="form" className="data mt-5">
-                <h3 className="fw-bold fs-3 text-center mb-3">Contact Person</h3>
+                <h3 className="fw-bold fs-3 text-center mb-3">Contact Personal</h3>
                 <Form>
                     <Form.Group className="mb-3 fs-4">
                         <Form.Label>Email address</Form.Label>
