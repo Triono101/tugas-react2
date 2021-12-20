@@ -3,26 +3,28 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-export default class NewsApi extends React.Component {
+export default class News extends React.Component {
   state = {
     articles: [],
-    isLoading: true, 
+    isLoading: true,
     errors: null
   };
 
-  getArticles() {
+  componentDidMount() {
     axios
-      .get("https://newsapi.org/v2/top-headlines?country=id&apiKey=f6527bfa24054bd08123fcd4fc298f5b")
+      .get(
+        "https://newsdata.io/api/1/news?apikey=pub_288553d4acd67109e308b37c50915957f69e&language=en"
+      )
       .then(response => {
-        return response.data.articles.map(article => ({
-            date: `${article.publishedAt}`,
-            source: `${article.url}`,
-            image: `${article.urlToImage}`,
-            title: `${article.title}`,
-            author: `${article.author}`,
-            describe: `${article.description}`,
-        }));
-      })
+        return response.data.results.map(article => ({
+          date: `${article.pubDate}`,
+          title: `${article.title}`,
+          url: `${article.link}`,
+          image: `${article.image_url}`,
+          author: `${article.creator}`,
+          media: `${article.source_id}`,
+        }))
+       })
       .then(articles => {
         this.setState({
           articles,
@@ -32,34 +34,30 @@ export default class NewsApi extends React.Component {
       .catch(error => this.setState({ error, isLoading: false }));
   }
 
-  componentDidMount() {
-    this.getArticles();
-  }
-
   render() {
     const { isLoading, articles } = this.state;
     return (
-        <React.Fragment>
-            <div className="newsData">
-                {!isLoading ? (
-                articles.map(article => {
-                    const { author, title, describe, date, image, source } = article;
-                    return (
-                        <div key={title} id="newsData" className="news">
-                            <img src={image} alt="Gambar tidak ditemukan" />
-                            <h5 className="title">{title}</h5>
-                            <p className="author">{author} - {date}</p>
-                            <p className="description">{describe}
-                                <a href={source} target="_blank" rel="noreferrer"><button style={{marginLeft: '5px'}} className="btn-klik">Read Detail</button></a></p>
-                        </div>
-                    );
-                })
-                ) : (
-                    <Loader type="Bars" color="#00BFFF" height={80} width={80} timeout={3000} />
-                )
-                }
+      <React.Fragment>
+        <div className="newsData">
+          {!isLoading ? (
+            articles.map(article => {
+              const { date, title, url, author, media, image } = article;
+              return (
+                <div key={title} id="newsData" className="news">
+                <img src={image} alt="Gambar tidak tersedia" />
+                <h5 className="title">{title}</h5>
+                <p className="author">{author} - {date}</p>
+                <p className="description" style={{fontWeight: 'Bold'}}>{media}
+                    <a href={url} target="_blank" rel="noreferrer"><button style={{marginLeft: '5px'}} className="btn-klik">Read Detail</button></a></p>
             </div>
-        </React.Fragment>
+              );
+            })
+          ) : (
+            <Loader type="Bars" color="#00BFFF" height={80} width={80} timeout={3000} />
+          )}
+        </div>
+
+      </React.Fragment>
     );
   }
 }
