@@ -1,10 +1,10 @@
-import Component from "./Component";
+import Registrasi from "./Form";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Component />
+        <Registrasi />
       </header>
     </div>
   );
