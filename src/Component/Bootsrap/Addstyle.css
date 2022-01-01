@@ -28,7 +28,7 @@ div h1 {
 }
 
 .jumbotron {
-    background-image: url("./Component/Bootsrap/data.png");
+    background-image: url("./data.png");
     background-size: cover;
     height: 500px;
     background-position: 0 -217px;

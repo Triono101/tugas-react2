@@ -1,5 +1,5 @@
 import React from "react";
-import "../Addstyle.css"
+import "../Component/Bootsrap/Addstyle.css"
 import Boostrap from "./Bootsrap";
 import Content from "./Bootsrap/body";
 import Footer from "./Bootsrap/footer";
