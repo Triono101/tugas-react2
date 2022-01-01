@@ -1,10 +1,10 @@
-import Page from "./News Api";
+import Routing from "./Routing Web";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Page />
+        <Routing />
       </header>
     </div>
   );
