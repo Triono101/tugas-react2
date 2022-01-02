@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./mars.png');
+    background-size: cover;
+    height: 417px;
+}
+
+.show {
+    margin-top: 125px;
+    text-align: center;
+    width: 700px;
+    height: 390px;
+    background-image: url('./mars1.png');
+	margin: auto;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.pertama {
+    padding-top: 100px;
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0 1px 2px white;
+}
+
+.display {
+    margin-top: 125px;
+}
+
+.btn123 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 7px;
+    margin: 25px;
+    text-align: center;
+    color: white;
+    background: #a82400;
+    border-radius: 100px;
+}
+
+.btn123:hover {
+    background-color: #e44436;
+}
+
+.count {
+    font-size: 30px;
+    font-weight: bold;
+}
